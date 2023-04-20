@@ -50,7 +50,6 @@ app.post('/api/post', async (req, res) => {
 
 app.get('/api/getPosts', async (req, res) => {
     try {
-        console.log(process.env.OPENAI_API_KEY)
         const posts = await getAllPost();
         res.status(200).json({ success: true, data: posts });
     } catch (error) {
