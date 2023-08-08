@@ -24,13 +24,13 @@ const openConnection = async () => {
 };
 
 // Function to generate a unique ID for a post
-const generateCartId = () => uuidv4();
+const generatedUuid = () => uuidv4();
 
 // Exported function to create a new post
 export const createNewPost = async (name, prompt, photoUrl) => {
   try {
     // Generate a unique post ID
-    const generatedId = generateCartId();
+    const generatedId = generatedUuid();
     // Open a connection to the MongoDB server
     await openConnection();
     // Insert the new post data into the 'Images' collection
