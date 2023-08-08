@@ -10,7 +10,7 @@ import { createNewPost, getAllPost } from "./mongodb/connection.js";
 dotenv.config()
 
 // Create an Express app
-const app = Express();
+export const app = Express();
 
 // Configure middleware
 app.use(Express.json({ limit: '50mb' }));
