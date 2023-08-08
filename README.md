@@ -86,6 +86,21 @@ To get started with Artsy, follow these steps:
 3. Start the server by running `npm run dev` in the root directory.
 4. Open `http://localhost:3000` in your web browser.
 
+## Testing
+
+The Artsy application includes unit tests to ensure the correctness of key functions. These tests focus on the logic of individual functions, such as creating new posts and retrieving posts from the database. Mocks are used to isolate these tests from external dependencies, allowing for focused testing of the code's behavior.
+
+To run the tests, follow these steps:
+
+1. Open a terminal window and navigate to the root directory of the Artsy project.
+
+2. Run the following command to execute the tests:
+
+      `` npm run test ``
+
+    This command will trigger the test runner and display the results of the tests in the terminal.
+
+
 ## Contributing
 
 If you would like to contribute to Artsy, please follow these steps:
